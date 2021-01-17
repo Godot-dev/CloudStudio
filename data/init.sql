@@ -1,2 +1,0 @@
-\. drop.sql
-\. create.sql
