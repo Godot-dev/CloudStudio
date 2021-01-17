@@ -1,7 +1,7 @@
 # Projet CloudStudio
 
 Bienvenue sur le site CloudStudio, disponible à l'url suivante :
-## godotbox.ddns.net
+ http://godotbox.ddns.net
 
 Ce projet, dont je suis le chef, a été réalisé par 6 étudiants en deuxième année de DUT Informatique (dont 3 qui ont fait les diagrammes de séquence et la documentation)
 
