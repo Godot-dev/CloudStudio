@@ -24,3 +24,4 @@ Voici la liste de ce que j'ai fait dans le projet, à part mes rôles de chef de
 #### Bugs connus :
 - Impossible de reculer d'une page sans faire planter le contrôleur
 - Problème de suppression avec les espace dans les noms de fichiers (problème résolu temporairement en supprimant tous les fichiers qui ont le même premier mot)
+- Du à l'absence de certificat, le site est affiché comme non sécurisé quand nous le visitons pour la première fois
