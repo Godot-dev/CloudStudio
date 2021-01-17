@@ -5,6 +5,8 @@ Bienvenue sur le site CloudStudio, disponible à l'url suivante :
 
 Ce projet, dont je suis le chef, a été réalisé par 6 étudiants en deuxième année de DUT Informatique (dont 3 qui ont fait les diagrammes de séquence et la documentation)
 
+L'objectif de ce site web est de permettre à des musiciens de collaborer sur des projets en ligne, de pouvoir sauvegarder les fichiers dans le cloud et s'échanger les fichiers et observer l'avancée du projet avec un système de versions. 
+
 A ce jour, voici les fonctionnalités présentes sur ce site :
 #### - Créer un compte, et modifier les informations du compte ainsi que sa photo de profil
 #### - Créer et supprimer un projet
