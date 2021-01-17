@@ -270,7 +270,7 @@ if (session_status() == PHP_SESSION_NONE) {
                                         <input type="hidden" name="nouvelleVersion" value="rien"></input>
                                         <input type="hidden" name="action" value="uploadPreview"></input>
                                         <input type="file" id="upload" name="input-file" hidden/><label id="btnUpload" for="upload" class="btn btn-light" data-placement="right" data-toggle="tooltip" title="Upload Your preview file"><img class="img-fluid" src="../assets/img/upload.png"></label>
-                                        <input type="submit" value="Send">
+                                        <input id="btnSave" class="btn btn-light" type="submit" value="Send">
                                     </form>
                                 </div>
                             </div>
@@ -286,7 +286,7 @@ if (session_status() == PHP_SESSION_NONE) {
                                         <input type="hidden" name="nouvelleVersion" value="rien"></input>
                                         <input type="hidden" name="action" value="downloadAllFiles"></input>
                                         <button class="btn btn-light" id="btnDownloadStems" type="submit">
-                                            <img class="img-fluid" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" src="../assets/img/thumbnails/downloading-file.png" width="27px" title="Click here create a zip file to allow you to download the entire version !">
+                                            <img class="img-fluid" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" src="../assets/img/Groupe%2054.png" width="27px" title="Click here create a zip file to allow you to download the entire version !">
                                         </button>
                                     </form>
                                 </div>

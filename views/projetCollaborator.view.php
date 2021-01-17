@@ -154,7 +154,7 @@ if (session_status() == PHP_SESSION_NONE) {
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-9" style="border-style: none;">
-                    <h4 id="TitleSettings">Add / Remove a collaborator (only for the project's creator )</h4>
+                    <h4 id="TitleSettings">Add / Remove a collaborator (only for the project's creator)</h4>
                     <hr id="hrLight">
                     <?php if ($idCreateur == $id){ ?>
                       <form id="searchForm" class="form-inline md-form mr-auto mb-4" method=post action="../controler/projetCollaborator.ctrl.php">
@@ -166,7 +166,7 @@ if (session_status() == PHP_SESSION_NONE) {
                           <input type="hidden" name="newstems" value="false"></input>
                           <input type="hidden" name="action" value="AddCollaborator"></input>
                           <input class="border rounded-pill shadow-sm form-control mr-sm-2" type="email" id="search" name="search" placeholder="Enter an user email">
-                          <button class="btn text-capitalize" id="SubmitDragandDropBTN" type="submit">Add</button>
+                          <button class="btn text-capitalize" id="SubmitDragandDropBTN" type="submit">Add/Remove</button>
                       </form>
                     <?php }
                     ?>
@@ -175,8 +175,18 @@ if (session_status() == PHP_SESSION_NONE) {
                     <div class="row">
                         <div class="col" id="CollaboratorZone">
                           <div class="row" id="CollaboratorListItem">
-                            <div class="col-md-3"><img id="ProfilePic" src=<?= "../data/PP/$creator->photoProfil" ?>>
-                              <p class="profilPic"><?= "$creator->nom $collaborator->prenom"?></p><small><?= "$creator->email"?></small>
+                            <div class="col colCollabo" style="padding: 25px;">
+                              <div class="row">
+                                <div class="col-9">
+                                  <p class="profilPic"><?= "$creator->nom $collaborator->prenom"?></p><small><?= "$creator->email"?></small>
+                                </div>
+                                <div class="col colLeftAligned" style="text-align: end;">
+                                  <img id="profilPicCollabo" style="width: 80px;
+                                  height:80px;
+                                  border-radius: 100%;
+                                  margin-bottom: 7px;" src=<?= "../data/PP/$creator->photoProfil" ?>>
+                                </div>
+                            </div>
                             </div>
                           </div>
                         </div>
@@ -187,9 +197,19 @@ if (session_status() == PHP_SESSION_NONE) {
                         <div class="col" id="CollaboratorZone">
                         <?php foreach($listeCollaborator as $collaborator): ?>
                             <div class="row" id="CollaboratorListItem">
-                              <div class="col-md-3"><img id="ProfilePic" src=<?= "../data/PP/$collaborator->photoProfil" ?>>
+                              <div class="col colCollabo" style="padding: 25px;">
+                                <div class="row">
+                                  <div class="col-9">
                                   <p class="profilPic"><?= "$collaborator->nom $collaborator->prenom"?></p><small><?= "$collaborator->email"?></small>
-                              </div>
+                                  </div>
+                                  <div class="col colLeftAligned" style="text-align: end;">
+                            <img id="ProfilePic" style="width: 80px;
+                            height:80px;
+                            border-radius: 100%;
+                            margin-bottom: 7px;" src=<?= "../data/PP/$collaborator->photoProfil" ?>>
+                            </div>
+                            </div>
+                            </div>
                             </div>
                         <?php endforeach; ?>
                         </div>

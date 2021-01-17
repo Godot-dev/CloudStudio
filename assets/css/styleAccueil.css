@@ -1080,3 +1080,18 @@ a:active {
   margin-bottom: 5px;
   display: inline;
 }
+
+.colLeftAligned{
+  text-align: end;
+}
+
+#profilPicCollabo{
+  width: 80px;
+  height:80px;
+  border-radius: 100%;
+  margin-bottom: 7px;
+}
+
+.colCollabo{
+  padding: 25px;
+}
