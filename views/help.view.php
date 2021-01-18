@@ -84,19 +84,23 @@ if (session_status() == PHP_SESSION_NONE) {
                 <p class="text-center">Here you can find all the informations you need to get started with CloudStudio</p>
             </div>
             <div class="row projects">
-                <div class="col-sm-6 col-lg-4 item"><img src="../assets/img/FLstudio.png">
+                <div class="col-sm-6 col-lg-4 item"><img class="ImgHelp" src="../assets/img/FLstudio.png" style="width: 100%;
+  border-radius: 5px;">
                     <h3 class="name">Software Export</h3>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
                 </div>
-                <div class="col-sm-6 col-lg-4 item"><img src="../assets/img/MainResized.png">
+                <div class="col-sm-6 col-lg-4 item"><img class="ImgHelp" src="../assets/img/MainResized.png" style="width: 100%;
+  border-radius: 5px;">
                     <h3 class="name">Project Management</h3>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
                 </div>
-                <div class="col-sm-6 col-lg-4 item"><img src="../assets/img/IndexPageResized.png">
+                <div class="col-sm-6 col-lg-4 item"><img class="ImgHelp" src="../assets/img/IndexPageResized.png" style="width: 100%;
+  border-radius: 5px;">
                     <h3 class="name">Get Started With Cloud Studio</h3>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
                 </div>
-                <div class="col-sm-6 col-lg-4 item"><img src="../assets/img/FLMainResized.png">
+                <div class="col-sm-6 col-lg-4 item"><img class="ImgHelp" src="../assets/img/FLMainResized.png" style="width: 100%;
+  border-radius: 5px;">
                     <h3 class="name">CloudStudio with FLStudio</h3>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
                 </div>

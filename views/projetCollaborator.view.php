@@ -178,7 +178,7 @@ if (session_status() == PHP_SESSION_NONE) {
                             <div class="col colCollabo" style="padding: 25px;">
                               <div class="row">
                                 <div class="col-9">
-                                  <p class="profilPic"><?= "$creator->nom $collaborator->prenom"?></p><small><?= "$creator->email"?></small>
+                                  <p class="profilPic"><?= "$creator->nom $creator->prenom"?></p><small><?= "$creator->email"?></small>
                                 </div>
                                 <div class="col colLeftAligned" style="text-align: end;">
                                   <img id="profilPicCollabo" style="width: 80px;

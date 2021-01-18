@@ -237,6 +237,10 @@ a:active {
   background-color: #F53478;
   border-color: #dae0e5;
 }
+.ImgHelp{
+  width: 500px;
+  border-radius: 5px;
+}
 
 #mainNav.navbar-shrink .navbar-brand, #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
   color: #707070;
@@ -401,6 +405,7 @@ a:active {
   background-color: #e9ecef;
   border-radius: 10px;
   margin: 0px;
+  margin-left: 10px;
 }
 
 #UploadZone{
@@ -416,9 +421,6 @@ a:active {
   margin-top: 12px;
 }
 
-.rowHundred{
-  max-width: 100%;
-}
 
 .ProjectP {
   font-family: "Segoe Ui Regular";
@@ -699,8 +701,6 @@ a:active {
   box-shadow: 2px 2px 5px rgba(33,37,41,0.57);
 }
 
-#ProjectMainFirstContainer, {
-}
 
 #ContainerTop {
   max-width: 70%;
@@ -778,6 +778,7 @@ a:active {
   overflow: auto;
   height: 34rem;
   margin-bottom: 10px;
+  margin-right: 5px;
 }
 
 #StemsItems {

@@ -19,13 +19,6 @@
   z-index: 2;
 }
 
-h1 {
-  font-family: "Segoe Ui;
-  color: black;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
 
 .background-shapes {
   content: "";
@@ -51,4 +44,3 @@ h1 {
     transform: translate3d(0, -1692px, 0);
   }
 }
-

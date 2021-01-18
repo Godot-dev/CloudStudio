@@ -44,12 +44,12 @@ class DAO{
 
     function isUtilisateurExiste(string $mail) : bool
     {
-        $result = $this->connection->query("SELECT count(id) FROM Utilisateur WHERE email='$this->email'");
+        $result = $this->connection->query("SELECT count(id) FROM Utilisateur WHERE email='$mail'");
         $final = $result->fetchAll(PDO::FETCH_NUM);
-        if($final[0] == 0){
-            return true;
-        }else{
+        if($final[0][0] == 0){
             return false;
+        }else{
+            return true;
         }
     }
 
@@ -275,8 +275,13 @@ class DAO{
         $this->connection->exec("UPDATE Utilisateur SET prenom='$prenom' WHERE id=$idUtilisateur");
     }
 
-    function setEmail(string $email, int $idUtilisateur){
-        $this->connection->exec("UPDATE Utilisateur SET email='$email' WHERE id=$idUtilisateur");
+    function setEmail(string $email, int $idUtilisateur) : bool{
+        if($this->connection->query("SELECT count(*) FROM Utilisateur WHERE email='$email'")->fetchALL(PDO::FETCH_NUM)[0][0] == 0){
+            $this->connection->exec("UPDATE Utilisateur SET email='$email' WHERE id=$idUtilisateur"); // Si l'adresse mail n'est pas dans la bd, on update et on retourne true
+            return true;
+        }else{
+            return false; // Sinon on ne fait rien et on retourne false
+        }
     }
 
     function setMdp(string $mdp, int $idUtilisateur){

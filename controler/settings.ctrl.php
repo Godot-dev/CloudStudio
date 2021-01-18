@@ -23,7 +23,11 @@ if(isset($_POST['nom']) && $_POST['nom'] != ''){ // Même chose pour nom
   $dao->setNom($_POST['nom'],$id); $_SESSION['User']->nom = $_POST['nom'];
 }
 if(isset($_POST['email']) && $_POST['email'] != ''){ // Même chose pour email
-  $dao->setEmail($_POST['email'],$id); $_SESSION['User']->email = $_POST['email'];
+  if ($dao->setEmail($_POST['email'],$id)){
+    $_SESSION['User']->email = $_POST['email']; // On mets à jour la session
+  }else{
+    $view->assign("erreurMdp",'Error ! This mail adress is already assigned to the database.'); // La vue recevra cette variable, qui saura donc qu'il faut afficher un message d'erreur
+  }
 }
 if(isset($_POST['password']) && isset($_POST['confirmpass'])){ // Si au moins une des deux entrées contient quelque chose
   if($_POST['password'] == $_POST['confirmpass'] && $_POST['password'] != ''){ // Si les deux entrées sont les mêmes

@@ -333,7 +333,7 @@ if (session_status() == PHP_SESSION_NONE) {
                                     </div>
                                 </div>
                                 <p id="LightTxt">All uploaded files</p>
-                                <div class="row rowHundred">
+                                <div class="row">
                                     <?php if (!empty($newstems)) { ?>
                                         <div class="m-5" id="UploadZone">
                                             <div id="backdrop" class="backdrop backdrop-transition backdrop-dark">
@@ -362,7 +362,7 @@ if (session_status() == PHP_SESSION_NONE) {
                                         foreach ($listeStems as $stems) { ?>
                                             <div class="row" id="StemsItems">
                                                 <div class="col d-flex justify-content-sm-center align-items-sm-center justify-content-xl-center align-items-xl-center" id="StemsWaveformColumn" style="border-top-left-radius: 10px;border-bottom-left-radius: 10px;"><img src="../assets/img/Waveform.png"></div>
-                                                <div class="col-md-5 text-right d-inline" id="textStemsCol" style="min-width: 110px;">
+                                                <div class="col text-right d-inline" id="textStemsCol" style="min-width: 110px;">
                                                     <p class="text-left text-truncate" id="NameStemsP"><?= $stems ?></p>
                                                 </div>
 
@@ -379,7 +379,7 @@ if (session_status() == PHP_SESSION_NONE) {
                                                         <input type="hidden" name="versionCliquee" value=<?= $versionAAfficher->id ?>></input>
                                                         <input type="hidden" name="nouvelleVersion" value="rien"></input>
                                                         <input type="hidden" name="newstems" value="false"></input>
-                                                        <button class="btn btn-dark" id="btnDeleteStems" type="submit" onclick="return confirm('Are you sure that you want to delete this file?')"> <img src="../assets/img/close.png" width="27px" height="27px"> </button>
+                                                        <button class="btn btn-dark" id="btnDeleteStems" type="submit" onclick="return confirm('Are you sure that you want to delete this file?')"> <img src="../assets/img/close.png"> </button>
                                                     </form>
                                                 </div>
 
